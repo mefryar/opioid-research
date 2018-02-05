@@ -1,4 +1,7 @@
 # Specify intentionally untracked files to ignore
 
+# API secret tokens
+twitter_tokens.txt
+
 # Jupyter Notebook
 .ipynb_checkpoints
