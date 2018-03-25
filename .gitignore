@@ -1,7 +1,13 @@
 # Specify intentionally untracked files to ignore
 
 # API secret tokens
-twitter_tokens.txt
+twitter_tokens.py
+
+# Byte-compiled
+__pycache__/
+
+# Database
+tweets.db
 
 # Jupyter Notebook
 .ipynb_checkpoints
