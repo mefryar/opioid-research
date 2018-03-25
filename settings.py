@@ -18,5 +18,6 @@ TWITTER_SECRET = twitter_tokens.TWITTER_SECRET
 
 TRACK_TERMS = ['opioid', 'opiate', 'heroin', 'fentanyl', 'methadone']
 CONNECTION_STRING = 'sqlite:///tweets.db'
-CSV_NAME = 'tweets.csv'
+DB_NAME = 'tweets.db'
 TABLE_NAME = 'tweets'
+CSV_NAME = 'data/tweets.csv'
