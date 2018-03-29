@@ -6,6 +6,9 @@ twitter_tokens.py
 # Byte-compiled
 __pycache__/
 
+# Data
+data/
+
 # Database
 tweets.db
 
