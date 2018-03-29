@@ -29,7 +29,7 @@ db = dataset.connect(settings.CONNECTION_STRING)
 class StreamListener(tweepy.StreamListener):
 
     def on_status(self, status):
-        if hasattr(status, 'retweeted_status') or (status.lang != 'en'):
+        if hasattr(status, 'retweeted_status'):
             return
 
         else:
@@ -82,4 +82,5 @@ api = tweepy.API(auth)
 stream_listener = StreamListener()
 stream = tweepy.Stream(auth=api.auth, listener=stream_listener,
                        tweet_mode='extended')
-stream.filter(track=settings.TRACK_TERMS)
+stream.filter(track=settings.TRACK_TERMS, languages=['en'],
+                          stall_warnings=True)
