@@ -9,6 +9,7 @@ Hat tip: https://www.dataquest.io/blog/streaming-data-python/
 
 """
 
+from datetime import datetime    # For timestamping csv files
 import twitter_tokens
 
 TWITTER_APP_KEY = twitter_tokens.TWITTER_APP_KEY
@@ -23,6 +24,9 @@ TRACK_TERMS = ['burprenorphine', 'carfentanil', 'codeine', 'fentanyl',
                'opium', 'overdose', 'oxycodone', 'oxycontin', 'percocet',
                'suboxone', 'vicodin', 'vivitrol']
 CONNECTION_STRING = 'sqlite:///tweets.db'
-DB_NAME = 'tweets.db'
+DB_NAME = 'tweets'
 TABLE_NAME = 'tweets'
-CSV_NAME = 'data/tweets.csv'
+
+NOW = datetime.utcnow().strftime("%Y-%m-%d_%H.%M.%S")
+CSV_NAME = '/Users/mifryar/Documents/Dropbox (Personal)/TDI/opioid-research/' \
+           'tweets_{}.csv'.format(NOW)
