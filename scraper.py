@@ -37,11 +37,14 @@ class StreamListener(tweepy.StreamListener):
                 text = status.extended_tweet['full_text']
             except AttributeError:
                 text = status.text
-            created = status.created_at
+            created_utc = status.created_at
+            favs = status.favorite_count
+            followers = status.user.followers_count
             handle = status.user.screen_name
             loc = status.user.location
-            tweet_id = status.id_str
-            user_id = status.user.id
+            rts = status.retweet_count
+            tweet_id_str = status.id_str
+            user_id_str = status.user.id_str
 
             blob = TextBlob(text)
             polarity = blob.sentiment.polarity
@@ -50,12 +53,15 @@ class StreamListener(tweepy.StreamListener):
             table = db[settings.TABLE_NAME]
             try:
                 table.insert(dict(
-                    tweet_id=tweet_id,
-                    user_id=user_id,
+                    tweet_id=tweet_id_str,
+                    user_id=user_id_str,
                     handle=handle,
                     user_location=loc,
+                    followers=followers,
                     text=text,
-                    created=created,
+                    created_utc=created_utc,
+                    favorites=favs,
+                    retweets=rts,
                     polarity=polarity,
                     subjectivity=subjectivity,
                 ))
