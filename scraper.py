@@ -12,6 +12,7 @@ import logging
 import tweepy
 import dataset
 from sqlalchemy.exc import ProgrammingError
+from requests.packages.urllib3.exceptions import ReadTimeoutError
 from textblob import TextBlob
 import settings
 
@@ -73,14 +74,20 @@ class StreamListener(tweepy.StreamListener):
             return False
 
 
-# Authenticate using tokens defined in settings.py
-auth = tweepy.OAuthHandler(settings.TWITTER_APP_KEY,
-                           settings.TWITTER_APP_SECRET)
-auth.set_access_token(settings.TWITTER_KEY, settings.TWITTER_SECRET)
-api = tweepy.API(auth)
+if __name__ == '__main__':
+    # Authenticate using tokens defined in settings.py
+    auth = tweepy.OAuthHandler(settings.TWITTER_APP_KEY,
+                               settings.TWITTER_APP_SECRET)
+    auth.set_access_token(settings.TWITTER_KEY, settings.TWITTER_SECRET)
+    api = tweepy.API(auth)
 
-stream_listener = StreamListener()
-stream = tweepy.Stream(auth=api.auth, listener=stream_listener,
-                       tweet_mode='extended')
-stream.filter(track=settings.TRACK_TERMS, languages=['en'],
+    while True:
+        try:
+            stream_listener = StreamListener()
+            stream = tweepy.Stream(auth=api.auth, listener=stream_listener,
+                                   tweet_mode='extended')
+            stream.filter(track=settings.TRACK_TERMS, languages=['en'],
                           stall_warnings=True)
+        except ReadTimeoutError as err:
+            logging.warning(err)
+            continue
