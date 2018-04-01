@@ -1,0 +1,8 @@
+# Maintains the current IP details for the AWS instance
+
+# SSH to AWS instance
+# $ ssh -F ssh-config opioid-research-app
+Host opioid-research-app
+HostName ec2-52-11-50-74.us-west-2.compute.amazonaws.com
+IdentityFile opioid-research-app.pem
+User ec2-user
