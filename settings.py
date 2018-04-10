@@ -27,6 +27,8 @@ CONNECTION_STRING = 'postgresql://admin:{}' \
                     '@localhost:5432/tweets'.format(secrets.ADMIN_PASSWORD)
 DB_NAME = 'tweets'
 TABLE_NAME = 'tweets'
+PSYCOPG2_CONNECTION = 'dbname={} user=admin ' \
+                      'password={}'.format(DB_NAME,secrets.ADMIN_PASSWORD)
 
 NOW = datetime.utcnow().strftime("%Y-%m-%d_%H.%M.%S")
 CSV_NAME = '/Users/mifryar/Documents/Dropbox (Personal)/TDI/opioid-research/' \
