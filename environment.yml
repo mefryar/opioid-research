@@ -1,0 +1,12 @@
+name: opioid-research
+dependencies:
+  - python=3.6
+  - jupyter
+  - nb_conda
+  - pandas
+  - psycopg2   # For PostgreSQL
+  - pydocstyle
+  - pylint
+  - sqlalchemy
+  - textblob
+  - tweepy
