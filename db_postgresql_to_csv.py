@@ -3,6 +3,8 @@
 
 This module exports a PostgreSQL Database to a CSV file.
 
+psql command:
+\copy tweets to '[CSV PATH]' csv header
 """
 
 import csv
