@@ -7,8 +7,6 @@ psql command:
 \copy tweets to '[CSV PATH]' csv header
 """
 
-import csv
-import os
 import psycopg2
 import settings
 

@@ -2,7 +2,7 @@
 """Twitter scraper
 
 This module scrapes tweets from the Twitter Streaming API and saves them to an
-SQLite database.
+PostgreSQL database.
 
 Hat tip: https://www.dataquest.io/blog/streaming-data-python/
 
