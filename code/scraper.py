@@ -39,11 +39,9 @@ class StreamListener(tweepy.StreamListener):
             except AttributeError:
                 text = status.text
             created_utc = status.created_at
-            favs = status.favorite_count
             followers = status.user.followers_count
             handle = status.user.screen_name
             loc = status.user.location
-            rts = status.retweet_count
             tweet_id_str = status.id_str
             user_id_str = status.user.id_str
 
@@ -61,8 +59,6 @@ class StreamListener(tweepy.StreamListener):
                     followers=followers,
                     text=text,
                     created_utc=created_utc,
-                    favorites=favs,
-                    retweets=rts,
                     polarity=polarity,
                     subjectivity=subjectivity,
                 ))
