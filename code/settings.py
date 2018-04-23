@@ -19,10 +19,11 @@ TWITTER_SECRET = secrets.TWITTER_SECRET
 
 # Note these are case-insensitive
 TRACK_TERMS = ['burprenorphine', 'carfentanil', 'codeine', 'fentanyl',
-               'heroin', 'hydrocodone', 'methadone', 'morphine', 'naloxone',
-               'naltrexone', 'narcan', 'narcotic', 'opana', 'opiate', 'opioid',
-               'opium', 'overdose', 'oxycodone', 'oxycontin', 'percocet',
-               'suboxone', 'vicodin', 'vivitrol']
+               'heroin', 'injection site', 'hydrocodone', 'methadone',
+               'morphine', 'naloxone', 'naltrexone', 'narcan', 'narcotic',
+               'needle exchange', 'opana', 'opiate', 'opioid', 'opium',
+               'overdose', 'oxycodone', 'oxycontin', 'percocet', 'suboxone',
+               'safe injection', 'supervised injection', 'vicodin', 'vivitrol']
 CONNECTION_STRING = 'postgresql://admin:{}' \
                     '@localhost:5432/tweets'.format(secrets.ADMIN_PASSWORD)
 DB_NAME = 'tweets'
