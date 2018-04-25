@@ -14,6 +14,10 @@ tweets.db
 
 # Jupyter Notebook
 .ipynb_checkpoints
+notebook_archive/
+
+# Literature
+literature/
 
 # SSH keys
 *.pem
