@@ -5,10 +5,14 @@ dependencies:
   - matplotlib
   - nb_conda
   - pandas
+  - plotly
   - psycopg2   # For PostgreSQL
-  - pydocstyle
   - pylint
   - seaborn
   - sqlalchemy
-  - textblob
-  - tweepy
+
+# Packages to manually install
+# - dataset
+# - pydocstyle
+# - textblob
+# - tweepy
