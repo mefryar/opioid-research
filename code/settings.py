@@ -12,10 +12,10 @@ Hat tip: https://www.dataquest.io/blog/streaming-data-python/
 from datetime import datetime    # For timestamping csv files
 import secrets
 
-TWITTER_APP_KEY = secrets.TWITTER_APP_KEY
-TWITTER_APP_SECRET = secrets.TWITTER_APP_SECRET
-TWITTER_KEY = secrets.TWITTER_KEY
-TWITTER_SECRET = secrets.TWITTER_SECRET
+API_KEY = secrets.API_KEY
+API_SECRET = secrets.API_SECRET
+ACCESS_TOKEN = secrets.ACCESS_TOKEN
+ACCESS_TOKEN_SECRET = secrets.ACCESS_TOKEN_SECRET
 
 # Note these are case-insensitive
 TRACK_TERMS = ['burprenorphine', 'carfentanil', 'codeine', 'fentanyl',

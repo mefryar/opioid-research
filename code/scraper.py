@@ -72,9 +72,9 @@ class StreamListener(tweepy.StreamListener):
 
 if __name__ == '__main__':
     # Authenticate using tokens defined in settings.py
-    auth = tweepy.OAuthHandler(settings.TWITTER_APP_KEY,
-                               settings.TWITTER_APP_SECRET)
-    auth.set_access_token(settings.TWITTER_KEY, settings.TWITTER_SECRET)
+    auth = tweepy.OAuthHandler(settings.API_KEY,
+                               settings.API_SECRET)
+    auth.set_access_token(settings.ACCESS_TOKEN, settings.ACCESS_TOKEN_SECRET)
     api = tweepy.API(auth)
 
     while True:
