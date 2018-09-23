@@ -17,7 +17,7 @@ tweets.db
 notebook_archive/
 
 # Literature
-literature/
+writeups/references/
 
 # SSH keys
 *.pem
