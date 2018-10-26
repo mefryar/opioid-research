@@ -32,5 +32,5 @@ PSYCOPG2_CONNECTION = 'dbname={} user=admin ' \
                       'password={}'.format(DB_NAME, secrets.ADMIN_PASSWORD)
 
 NOW = datetime.utcnow().strftime("%Y-%m-%d_%H.%M.%S")
-CSV_NAME = '/Users/mifryar/Personal/Dropbox (Personal)/opioid-db-backups/'\
-           'tweets_{}.csv'.format(NOW)
+CSV_NAME = '/Users/mefryar/Dropbox (Personal)/opioid-research/'\
+           'opioid-db-backups/tweets_{}.csv'.format(NOW)
