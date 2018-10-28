@@ -29,6 +29,10 @@ Innovations: Naloxone Access, Opioid Abuse, and Crime.
 
 Mackey, T. K., Kalyanam, J., Katsuki, T., & Lanckriet, G. (2017). Twitter-based Detection of Illegal Online Sale of Prescription Opioid. American Journal of Public Health, 107(12), 1910-1915.
 
+McElrath, K. & Joseph, H. (2018). Medication-Assisted Treatment (MAT) for
+Opioid Addiction: Introduction to the Special Issue. Substance Use & Misuse,
+53(2), 177-180.
+
 Seth, P., Scholl, L., Rudd, R.A., Bacon, S. (2018). Overdose Deaths
 Involving Opioids, Cocaine, and Psychostimulants — United States, 2015–2016.
 MMWR Morb Mortal Wkly Rep 67, 349–358.
