@@ -1,18 +1,21 @@
 name: opioid-research
+channels:
+  - conda-forge
 dependencies:
   - python=3.6
+  - beautifulsoup4
   - jupyter
   - matplotlib
   - nb_conda
   - pandas
   - plotly
   - psycopg2   # For PostgreSQL
+  - pydocstyle
   - pylint
   - seaborn
   - sqlalchemy
+  - textblob
+  - tweepy
 
-# Packages to manually install
+# Package to manually install
 # - dataset
-# - pydocstyle
-# - textblob
-# - tweepy
