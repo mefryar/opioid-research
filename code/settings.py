@@ -34,3 +34,5 @@ PSYCOPG2_CONNECTION = 'dbname={} user=admin ' \
 NOW = datetime.utcnow().strftime("%Y-%m-%d_%H.%M.%S")
 CSV_NAME = '/Users/mefryar/Dropbox (Personal)/opioid-research/'\
            'opioid-db-backups/tweets_{}.csv'.format(NOW)
+
+DATA_PATH = '/Users/mefryar/Dropbox (Personal)/opioid-research/data/'
