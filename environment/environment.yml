@@ -8,12 +8,14 @@ dependencies:
   - jupyter
   - matplotlib
   - nb_conda
+  - nltk
   - pandas
   - plotly
   - psycopg2   # For PostgreSQL
   - pydocstyle
   - pylint
   - seaborn
+  - spacy
   - sqlalchemy
   - textblob
   - tweepy
