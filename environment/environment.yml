@@ -15,6 +15,7 @@ dependencies:
   - pydocstyle
   - pylint
   - seaborn
+  - scikit-learn
   - spacy
   - sqlalchemy
   - textblob
