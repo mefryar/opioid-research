@@ -14,7 +14,7 @@ In 2016, 42,249 Americans died as a result of an opioid overdose[1]. To put that
 
 The most effective known method for reducing overdose deaths is medication-assisted treatment (MAT) which has been shown in clinical studies to cut overdose deaths by 70 percent[3]. However, the persistence of stigmatized views of addiction as a moral failing rather than a medical condition among policymakers and the general public has fueled resistance to efforts to expand access to MAT and discouraged individuals struggling with addiction from seeking treatment[4].
 
-Despite it's importance, very little data is currently available on opioid-related stigma. This is in part because it is costly to measure stigma with traditional tools such as surveys, which may also underestimate the pervasiveness of stigma due to social desirability bias. However, the combination of new data sources, such as social media sites like Twitter, and new machine learning algorithms for analyzing unstructured text data has the potential to fill this gap.
+Despite its importance, very little data is currently available on opioid-related stigma. This is in part because it is costly to measure stigma with traditional tools such as surveys, which may also underestimate the pervasiveness of stigma due to social desirability bias. However, the combination of new data sources, such as social media sites like Twitter, and new machine learning algorithms for analyzing unstructured text data has the potential to fill this gap.
 
 ## Problem Statement
 
