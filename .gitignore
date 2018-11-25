@@ -16,8 +16,8 @@ tweets.db
 .ipynb_checkpoints
 notebook_archive/
 
-# Literature
-writeups/references/
+# PDFs
+writeups/*.pdf
 
 # SSH keys
 *.pem
