@@ -32,7 +32,7 @@ a Naïve Bayes classifier that automatically codes the remaining tweets to
 produce the first proxy measure of how opioid-related stigma varies across the United States.
 
 ### Percent of Tweets Containing Stigmatizing Language by State
-![](../figures/cloropleth.png "Stigma by State")
+![](figures/choropleth.png "Stigma by State")
 
 ### Replication
 - All libraries needed for replication are listed in

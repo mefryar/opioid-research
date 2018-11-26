@@ -427,7 +427,7 @@ by the algorithm trained in this project. States with a greater percentage of
 tweets classified as stigmatizing are shaded darker. 
 
 ### Figure 10: Percent of Tweets Containing Stigmatizing Language by State
-![](../figures/cloropleth.png "Fig. 10: Stigma by State")
+![](../figures/choropleth.png "Fig. 10: Stigma by State")
 
 Although visualizing how stigma varies geographically answers an interesting
 descriptive question, the questions that are most important for policy are
