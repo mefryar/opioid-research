@@ -29,16 +29,19 @@ opioid-related stigma. To fill this gap, this project uses a novel dataset of
 September 2018. To create labeled examples, 1,000 randomly selected tweets are
 manually coded for stigmatizing language. These examples are then used to train
 a Naïve Bayes classifier that automatically codes the remaining tweets to
-produce the first proxy measure of how opioid-related stigma varies across the United States.
+produce the first measure of how opioid-related stigma varies across the United States.
+
+The full project report is available [here](writeups/report.pdf).
 
 ### Percent of Tweets Containing Stigmatizing Language by State
+[Link to interactive version](https://plot.ly/~mefryar/7/)
 ![](figures/choropleth.png "Stigma by State")
 
 ### Replication
 - All libraries needed for replication are listed in
-`environment/environment.yml`.
+[`environment/environment.yml`](environment/environment.yml).
 - All data needed for replication (145 MB) can be downloaded from this 
 [Dropbox link](https://www.dropbox.com/sh/9sfeo5p05dqxpb4/AACK0aako88H-G3s3nmmcE11a?dl=0).
 - All code needed for replication is contained in
-`code/opioid-stigma-nlp.ipynb`.
-- Figures included in the report are in `figures/`.
+[`code/opioid-stigma-nlp.ipynb`](code/opioid-stigma-nlp.ipynb).
+- Figures included in the report are in [`figures/`](figures/).
